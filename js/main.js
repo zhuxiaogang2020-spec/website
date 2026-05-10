@@ -35,6 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = el.getAttribute('data-i18n');
       const value = t[key];
       if (value !== undefined && value !== null) {
+        const i18nAttr = el.getAttribute('data-i18n-attr');
+        if (i18nAttr) {
+          el.setAttribute(i18nAttr, value);
+          return;
+        }
         // Handle different element types
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
           el.placeholder = value;
