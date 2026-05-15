@@ -13,7 +13,7 @@
   <meta name="color-scheme" content="light">
   <meta name="apple-mobile-web-app-title" content="采蘑菇机械臂">
   <meta name="application-name" content="Mushroom Harvesting Robot">
-  <title data-i18n="page.title">农业自动化智能采摘｜采蘑菇机械臂概念演示 | Mushroom Harvesting Robot | Mushroom Harvesting Robot | AI Agricultural Automation | Caelexten</title>
+  <title data-i18n="page.title">农业自动化智能采摘｜采蘑菇机械臂概念演示 | Mushroom Harvesting Robot | Caelexten</title>
   <meta name="description" content="面向农业自动化的采蘑菇机械臂概念演示：融合视觉识别、AI 与 ROS2 机器人控制，展示设施农业智能蘑菇采摘的技术路线、工作流程与研发进度。">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:locale:alternate" content="en_US">
@@ -69,16 +69,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
-  
-
-<meta name="description" content="Caelexten develops AI-driven mushroom harvesting robots. Integrating ROS2, YOLO, and Gemini Pro for precise, automated agricultural solutions in Ontario, Canada.">
-
-<meta name="keywords" content="Mushroom Harvesting Robot, Agricultural Automation, ROS2 Robotics, AI Farming Canada, Computer Vision Agriculture, YOLO Mushroom Detection">
-
-<meta name="geo.region" content="CA-ON" />
-<meta name="geo.placename" content="St. Catharines" />
-</head>
 <body>
 
   <!-- ===== Sticky Top Nav ===== -->
@@ -94,7 +84,9 @@
         <li><a href="#techstack" data-i18n="nav.techstack">技术路线</a></li>
         <li><a href="#timeline" data-i18n="nav.timeline">研发进度</a></li>
         <li><a href="#demo" data-i18n="nav.demo">演示</a></li>
-        <li><a href="#join" data-i18n="nav.join">加入我们</a></li>
+        <li><a href="blog/" data-i18n="nav.blog">博客</a></li>
+        <li><a href="team/" data-i18n="nav.team">团队</a></li>
+        <li><a href="media/" data-i18n="nav.media">媒体</a></li>
         <li><a href="#contact" data-i18n="nav.contact">联系</a></li>
       </ul>
       <div class="nav-right">
@@ -228,42 +220,42 @@
         <div class="timeline-item completed">
           <div class="tl-dot"></div>
           <div class="tl-content">
-            <div class="tl-date">2024 Q4</div>
+            <time class="tl-date">2024 Q4</time>
             <div class="tl-text" data-i18n="timeline.item1">完成概念设计</div>
           </div>
         </div>
         <div class="timeline-item active">
           <div class="tl-dot"></div>
           <div class="tl-content">
-            <div class="tl-date">2025 Q1</div>
+            <time class="tl-date">2025 Q1</time>
             <div class="tl-text" data-i18n="timeline.item2">机械臂到货</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="tl-dot"></div>
           <div class="tl-content">
-            <div class="tl-date">2025 Q2</div>
+            <time class="tl-date">2025 Q2</time>
             <div class="tl-text" data-i18n="timeline.item3">完成手眼标定</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="tl-dot"></div>
           <div class="tl-content">
-            <div class="tl-date">2025 Q3</div>
+            <time class="tl-date">2025 Q3</time>
             <div class="tl-text" data-i18n="timeline.item4">完成识别模型</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="tl-dot"></div>
           <div class="tl-content">
-            <div class="tl-date">2025 Q4</div>
+            <time class="tl-date">2025 Q4</time>
             <div class="tl-text" data-i18n="timeline.item5">采摘 Demo</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="tl-dot"></div>
           <div class="tl-content">
-            <div class="tl-date">2026</div>
+            <time class="tl-date">2026</time>
             <div class="tl-text" data-i18n="timeline.item6">发布原型</div>
           </div>
         </div>
@@ -276,14 +268,13 @@
     <div class="container">
       <h2 class="section-title" data-i18n="demo.title">演示（模拟）</h2>
       <div class="demo-container">
-        <div class="demo-placeholder">
-          <div class="demo-icon" role="img" data-i18n="demo.icon_alt" data-i18n-attr="aria-label">🎬</div>
-          <p class="demo-text" data-i18n="demo.p1">
-            机械臂尚未完成，目前展示的是采摘流程的概念模拟。
-          </p>
-          <p class="demo-text" data-i18n="demo.p2">
-            未来将替换为真实视频与数据展示。
-          </p>
+        <div class="demo-videos">
+          <video class="demo-video" controls playsinline preload="metadata" aria-label="采蘑菇机械臂工作演示视频 1">
+            <source src="images/demo-1.mp4" type="video/mp4">
+          </video>
+          <video class="demo-video" controls playsinline preload="metadata" aria-label="采蘑菇机械臂工作演示视频 2">
+            <source src="images/demo-2.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>

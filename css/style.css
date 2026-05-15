@@ -156,6 +156,14 @@ ul { list-style: none; }
   transform: scaleX(1);
 }
 
+.nav-links a.active {
+  color: var(--color-primary);
+}
+
+.nav-links a.active::after {
+  transform: scaleX(1);
+}
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -614,28 +622,17 @@ ul { list-style: none; }
   margin: 0 auto;
 }
 
-.demo-placeholder {
+.demo-videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.demo-video {
+  width: 100%;
+  border-radius: var(--rounded-md);
   background: var(--color-canvas);
-  border: 2px dashed var(--color-hairline);
-  border-radius: var(--rounded-lg);
-  padding: var(--space-section) var(--space-xxl);
-  text-align: center;
-}
-
-.demo-icon {
-  font-size: 48px;
-  margin-bottom: var(--space-lg);
-}
-
-.demo-text {
-  font-size: 16px;
-  color: var(--color-mute);
-  line-height: 1.6;
-  margin-bottom: var(--space-md);
-}
-
-.demo-text:last-child {
-  margin-bottom: 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 /* ===== Join Us ===== */
@@ -769,7 +766,7 @@ ul { list-style: none; }
 .workflow-step,
 .tech-card,
 .timeline-item,
-.demo-placeholder,
+.demo-video,
 .join-card,
 .contact-card {
   opacity: 0;
@@ -781,7 +778,7 @@ ul { list-style: none; }
 .workflow-step.animate-in,
 .tech-card.animate-in,
 .timeline-item.animate-in,
-.demo-placeholder.animate-in,
+.demo-video.animate-in,
 .join-card.animate-in,
 .contact-card.animate-in {
   opacity: 1;
@@ -893,8 +890,8 @@ ul { list-style: none; }
     grid-template-columns: 1fr 1fr;
   }
 
-  .demo-placeholder {
-    padding: var(--space-xxl) var(--space-lg);
+  .demo-videos {
+    grid-template-columns: 1fr;
   }
 
   .contact-email {

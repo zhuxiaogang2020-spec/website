@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="蘑菇种植, 农业自动化, 蘑菇图片, 设施农业, oyster mushroom, button mushroom">
+  <meta name="theme-color" content="#c0392b">
+  <meta name="color-scheme" content="light">
+  <title data-i18n="page.title">媒体中心 | 蘑菇种植与农业自动化影像 | Mushroom Harvesting Robot</title>
+  <meta name="description" content="蘑菇种植与农业自动化相关影像资料，展示蘑菇种植环境与采摘场景。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caelexten.com/media/">
+  <meta property="og:title" content="媒体中心 | 采蘑菇机械臂">
+  <meta property="og:description" content="蘑菇种植与农业自动化影像资料。">
+  <meta property="og:site_name" content="Mushroom Harvesting Robot">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://caelexten.com/media/">
+  <link rel="alternate" href="https://caelexten.com/media/" hreflang="zh-CN">
+  <link rel="alternate" href="https://caelexten.com/en/media/" hreflang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=20260510">
+  <style>
+    .page-header {
+      padding: calc(var(--nav-height) + 48px) 0 32px;
+      background: var(--color-surface-dark);
+      text-align: center;
+    }
+    .page-header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--color-on-dark);
+      margin-bottom: 8px;
+    }
+    .page-header p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.65);
+    }
+    .page-body {
+      padding: 48px 0 64px;
+      background: var(--color-surface-soft);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-lg);
+    }
+    .gallery-item {
+      border-radius: var(--rounded-md);
+      overflow: hidden;
+      background: var(--color-canvas);
+      border: 1px solid var(--color-hairline);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+    .gallery-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-item .caption {
+      padding: var(--space-sm) var(--space-md);
+      font-size: 12px;
+      color: var(--color-mute);
+      line-height: 1.4;
+    }
+    .gallery-item-video {
+      cursor: pointer;
+    }
+    .gallery-video {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-note {
+      margin-top: var(--space-xl);
+      text-align: center;
+      font-size: 13px;
+      color: var(--color-ash);
+    }
+    @media (max-width: 900px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 550px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .page-header h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <nav class="primary-nav" id="topNav">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="nav-logo" href="../" data-i18n="nav.logo_alt" data-i18n-attr="aria-label"><span aria-hidden="true">🍄</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../" data-i18n="nav.about">首页</a></li>
+        <li><a href="../#workflow" data-i18n="nav.workflow">工作流程</a></li>
+        <li><a href="../#techstack" data-i18n="nav.techstack">技术路线</a></li>
+        <li><a href="../blog/" data-i18n="nav.blog">博客</a></li>
+        <li><a href="../team/" data-i18n="nav.team">团队</a></li>
+        <li><a href="./" class="active" data-i18n="nav.media">媒体</a></li>
+        <li><a href="../#contact" data-i18n="nav.contact">联系</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+        <a href="../#contact" class="btn btn-primary btn-sm" data-i18n="nav.cta">联系我</a>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main">
+    <!-- ===== Page Header ===== -->
+    <div class="page-header">
+      <div class="container">
+        <h1 data-i18n="media.title">媒体中心</h1>
+        <p data-i18n="media.subtitle">蘑菇种植与农业自动化影像</p>
+      </div>
+    </div>
+
+    <!-- ===== Gallery ===== -->
+    <section class="page-body">
+      <div class="container">
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1735282260417-cb781d757604?fm=jpg&q=60&w=600&h=400&fit=crop" alt="蘑菇种植架上的平菇" loading="lazy">
+            <div class="caption">室内蘑菇种植架</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1762889278403-1d1a57d9a587?fm=jpg&q=60&w=600&h=400&fit=crop" alt="基质袋上生长的平菇" loading="lazy">
+            <div class="caption">基质袋栽培平菇</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1770429939069-2f649afea536?fm=jpg&q=60&w=600&h=400&fit=crop" alt="人工采收平菇" loading="lazy">
+            <div class="caption">人工采收平菇</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1760108273033-0d789ef53d70?fm=jpg&q=60&w=600&h=400&fit=crop" alt="杏鲍菇特写" loading="lazy">
+            <div class="caption">杏鲍菇</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1770884844724-ac9e36b599e9?fm=jpg&q=60&w=600&h=400&fit=crop" alt="平菇簇" loading="lazy">
+            <div class="caption">平菇簇</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1770430950172-3c628cc48cdf?fm=jpg&q=60&w=600&h=400&fit=crop" alt="粉红平菇" loading="lazy">
+            <div class="caption">粉红平菇</div>
+          </div>
+          <div class="gallery-item gallery-item-video">
+            <video class="gallery-video" controls playsinline preload="metadata">
+              <source src="../images/demo-1.mp4" type="video/mp4">
+            </video>
+            <div class="caption">机械臂调试演示 1</div>
+          </div>
+          <div class="gallery-item gallery-item-video">
+            <video class="gallery-video" controls playsinline preload="metadata">
+              <source src="../images/demo-2.mp4" type="video/mp4">
+            </video>
+            <div class="caption">机械臂调试演示 2</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/31243424/pexels-photo-31243424/free-photo-of-button-mushrooms-growing-in-indoor-farm-setting.jpeg?w=600&h=400&fit=crop" alt="室内蘑菇农场中的双孢菇" loading="lazy">
+            <div class="caption">双孢菇种植床</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/2478421/pexels-photo-2478421.jpeg?w=600&h=400&fit=crop" alt="采收蘑菇" loading="lazy">
+            <div class="caption">蘑菇采收作业</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/31203048/pexels-photo-31203048/free-photo-of-basket-of-vibrant-pink-and-white-oyster-mushrooms.jpeg?w=600&h=400&fit=crop" alt="装满蘑菇的篮子" loading="lazy">
+            <div class="caption">采收后的蘑菇</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/28930875/pexels-photo-28930875/free-photo-of-colorful-assortment-of-various-oyster-mushrooms.jpeg?w=600&h=400&fit=crop" alt="各种平菇" loading="lazy">
+            <div class="caption">平菇品种多样性</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/31729436/pexels-photo-31729436/free-photo-of-woman-harvesting-fresh-shiitake-mushrooms-outdoors.jpeg?w=600&h=400&fit=crop" alt="采收香菇" loading="lazy">
+            <div class="caption">香菇采收</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/28700282/pexels-photo-28700282/free-photo-of-assorted-gourmet-mushrooms-in-wooden-crate.jpeg?w=600&h=400&fit=crop" alt="各种蘑菇在木箱中" loading="lazy">
+            <div class="caption">各类食用菌</div>
+          </div>
+        </div>
+        <p class="gallery-note" data-i18n="media.gallery_note">以下图片来源于 Unsplash 与 Pexels，仅用于概念展示。</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="footer-brand-mark" aria-hidden="true">🍄</span> <span data-i18n="footer.brand">采蘑菇机械臂 Mushroom Harvesting Robot</span></div>
+        <div class="footer-copy" data-i18n="footer.copy">© 2025 采蘑菇机械臂项目 · 概念演示</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/translations.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

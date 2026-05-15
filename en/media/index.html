@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="mushroom farming, agricultural automation, mushroom images, indoor farming, oyster mushroom, button mushroom">
+  <meta name="theme-color" content="#c0392b">
+  <meta name="color-scheme" content="light">
+  <title data-i18n="page.title">Media Gallery | Mushroom Farming & Agricultural Automation | Mushroom Harvesting Robot</title>
+  <meta name="description" content="Images of mushroom cultivation and agricultural automation — mushroom farm environments, harvesting scenes, and mushroom varieties.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caelexten.com/en/media/">
+  <meta property="og:title" content="Media Gallery | Mushroom Harvesting Robot">
+  <meta property="og:description" content="Mushroom farming and agricultural automation imagery.">
+  <meta property="og:site_name" content="Mushroom Harvesting Robot">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://caelexten.com/en/media/">
+  <link rel="alternate" href="https://caelexten.com/media/" hreflang="zh-CN">
+  <link rel="alternate" href="https://caelexten.com/en/media/" hreflang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css?v=20260510">
+  <style>
+    .page-header {
+      padding: calc(var(--nav-height) + 48px) 0 32px;
+      background: var(--color-surface-dark);
+      text-align: center;
+    }
+    .page-header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--color-on-dark);
+      margin-bottom: 8px;
+    }
+    .page-header p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.65);
+    }
+    .page-body {
+      padding: 48px 0 64px;
+      background: var(--color-surface-soft);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-lg);
+    }
+    .gallery-item {
+      border-radius: var(--rounded-md);
+      overflow: hidden;
+      background: var(--color-canvas);
+      border: 1px solid var(--color-hairline);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+    .gallery-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-item .caption {
+      padding: var(--space-sm) var(--space-md);
+      font-size: 12px;
+      color: var(--color-mute);
+      line-height: 1.4;
+    }
+    .gallery-item-video {
+      cursor: pointer;
+    }
+    .gallery-video {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-note {
+      margin-top: var(--space-xl);
+      text-align: center;
+      font-size: 13px;
+      color: var(--color-ash);
+    }
+    @media (max-width: 900px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 550px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .page-header h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <nav class="primary-nav" id="topNav">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="nav-logo" href="../../en/" data-i18n="nav.logo_alt" data-i18n-attr="aria-label"><span aria-hidden="true">🍄</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../../en/" data-i18n="nav.about">Home</a></li>
+        <li><a href="../../en/#workflow" data-i18n="nav.workflow">Workflow</a></li>
+        <li><a href="../../en/#techstack" data-i18n="nav.techstack">Tech Stack</a></li>
+        <li><a href="../../en/blog/" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="../../en/team/" data-i18n="nav.team">Team</a></li>
+        <li><a href="./" class="active" data-i18n="nav.media">Media</a></li>
+        <li><a href="../../en/#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">中文</button>
+        <a href="../../en/#contact" class="btn btn-primary btn-sm" data-i18n="nav.cta">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main">
+    <!-- ===== Page Header ===== -->
+    <div class="page-header">
+      <div class="container">
+        <h1 data-i18n="media.title">Media Gallery</h1>
+        <p data-i18n="media.subtitle">Mushroom Farming & Agricultural Automation</p>
+      </div>
+    </div>
+
+    <!-- ===== Gallery ===== -->
+    <section class="page-body">
+      <div class="container">
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1735282260417-cb781d757604?fm=jpg&q=60&w=600&h=400&fit=crop" alt="Mushrooms growing on indoor shelves" loading="lazy">
+            <div class="caption">Indoor mushroom cultivation shelves</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1762889278403-1d1a57d9a587?fm=jpg&q=60&w=600&h=400&fit=crop" alt="Oyster mushrooms growing on substrate bags" loading="lazy">
+            <div class="caption">Oyster mushrooms on substrate bags</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1770429939069-2f649afea536?fm=jpg&q=60&w=600&h=400&fit=crop" alt="Hands harvesting oyster mushrooms" loading="lazy">
+            <div class="caption">Manual oyster mushroom harvest</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1760108273033-0d789ef53d70?fm=jpg&q=60&w=600&h=400&fit=crop" alt="King oyster mushrooms close-up" loading="lazy">
+            <div class="caption">King oyster mushrooms</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1770884844724-ac9e36b599e9?fm=jpg&q=60&w=600&h=400&fit=crop" alt="Cluster of oyster mushrooms" loading="lazy">
+            <div class="caption">Oyster mushroom cluster</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1770430950172-3c628cc48cdf?fm=jpg&q=60&w=600&h=400&fit=crop" alt="Pink coral mushrooms" loading="lazy">
+            <div class="caption">Pink oyster mushrooms</div>
+          </div>
+          <div class="gallery-item gallery-item-video">
+            <video class="gallery-video" controls playsinline preload="metadata">
+              <source src="../../images/demo-1.mp4" type="video/mp4">
+            </video>
+            <div class="caption">Robot arm demo 1</div>
+          </div>
+          <div class="gallery-item gallery-item-video">
+            <video class="gallery-video" controls playsinline preload="metadata">
+              <source src="../../images/demo-2.mp4" type="video/mp4">
+            </video>
+            <div class="caption">Robot arm demo 2</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/31243424/pexels-photo-31243424/free-photo-of-button-mushrooms-growing-in-indoor-farm-setting.jpeg?w=600&h=400&fit=crop" alt="Button mushrooms in indoor farm" loading="lazy">
+            <div class="caption">Button mushroom growing beds</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/2478421/pexels-photo-2478421.jpeg?w=600&h=400&fit=crop" alt="Harvesting mushrooms" loading="lazy">
+            <div class="caption">Mushroom harvesting</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/31203048/pexels-photo-31203048/free-photo-of-basket-of-vibrant-pink-and-white-oyster-mushrooms.jpeg?w=600&h=400&fit=crop" alt="Basket of mushrooms" loading="lazy">
+            <div class="caption">Harvested mushrooms</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/28930875/pexels-photo-28930875/free-photo-of-colorful-assortment-of-various-oyster-mushrooms.jpeg?w=600&h=400&fit=crop" alt="Assorted oyster mushrooms" loading="lazy">
+            <div class="caption">Oyster mushroom varieties</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/31729436/pexels-photo-31729436/free-photo-of-woman-harvesting-fresh-shiitake-mushrooms-outdoors.jpeg?w=600&h=400&fit=crop" alt="Harvesting shiitake mushrooms" loading="lazy">
+            <div class="caption">Shiitake mushroom harvest</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/28700282/pexels-photo-28700282/free-photo-of-assorted-gourmet-mushrooms-in-wooden-crate.jpeg?w=600&h=400&fit=crop" alt="Assorted gourmet mushrooms" loading="lazy">
+            <div class="caption">Gourmet mushroom varieties</div>
+          </div>
+        </div>
+        <p class="gallery-note" data-i18n="media.gallery_note">Images sourced from Unsplash and Pexels for concept demonstration purposes only.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="footer-brand-mark" aria-hidden="true">🍄</span> <span data-i18n="footer.brand">Mushroom Harvesting Robot</span></div>
+        <div class="footer-copy" data-i18n="footer.copy">© 2025 Mushroom Harvesting Robot · Concept Demo</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/translations.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

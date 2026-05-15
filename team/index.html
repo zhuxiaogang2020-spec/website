@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="采蘑菇机械臂, 创始人, 农业机器人团队, 重庆盾博科技, GPS定位系统, 农业自动化">
+  <meta name="theme-color" content="#c0392b">
+  <meta name="color-scheme" content="light">
+  <meta name="apple-mobile-web-app-title" content="采蘑菇机械臂">
+  <title data-i18n="page.title">关于创始人 | 采蘑菇机械臂项目团队 | Mushroom Harvesting Robot</title>
+  <meta name="description" content="了解采蘑菇机械臂项目创始人的背景：20年中国软件开发与创业经验，从GPS定位到农业机器人的转型故事。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caelexten.com/team/">
+  <meta property="og:title" content="关于创始人 | 采蘑菇机械臂">
+  <meta property="og:description" content="了解采蘑菇机械臂项目创始人的背景：从GPS定位到农业机器人的转型故事。">
+  <meta property="og:site_name" content="Mushroom Harvesting Robot">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="关于创始人 | 采蘑菇机械臂">
+  <meta name="twitter:description" content="了解采蘑菇机械臂项目创始人的背景：从GPS定位到农业机器人的转型故事。">
+  <link rel="canonical" href="https://caelexten.com/team/">
+  <link rel="alternate" href="https://caelexten.com/team/" hreflang="zh-CN">
+  <link rel="alternate" href="https://caelexten.com/en/team/" hreflang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=20260510">
+  <style>
+    /* Team page specific styles */
+    .page-header {
+      padding: calc(var(--nav-height) + 48px) 0 32px;
+      background: var(--color-surface-dark);
+      text-align: center;
+    }
+    .page-header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--color-on-dark);
+      margin-bottom: 8px;
+    }
+    .page-header p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .page-body {
+      padding: 48px 0 64px;
+      background: var(--color-surface-soft);
+    }
+    .page-body .container {
+      max-width: 720px;
+    }
+    .founder-story {
+      background: var(--color-canvas);
+      border-radius: var(--rounded-lg);
+      padding: var(--space-xxl);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+      display: flex;
+      gap: var(--space-xl);
+      align-items: flex-start;
+    }
+    .founder-photo {
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+      border-radius: var(--rounded-md);
+      object-fit: cover;
+    }
+    .founder-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .founder-story p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--color-body);
+      margin-bottom: var(--space-lg);
+    }
+    .founder-story p:last-child {
+      margin-bottom: 0;
+    }
+    .founder-story .highlight {
+      background: var(--color-primary-light);
+      border-radius: var(--rounded-md);
+      padding: var(--space-lg);
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+    .founder-cta {
+      margin-top: var(--space-xl);
+      text-align: center;
+    }
+    .founder-cta .btn {
+      height: 48px;
+      padding: 0 28px;
+      font-size: 16px;
+    }
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 28px; }
+      .founder-story { flex-direction: column; align-items: center; padding: var(--space-xl); }
+      .founder-photo { width: 160px; height: 160px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <nav class="primary-nav" id="topNav">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="nav-logo" href="../" data-i18n="nav.logo_alt" data-i18n-attr="aria-label"><span aria-hidden="true">🍄</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../" data-i18n="nav.about">首页</a></li>
+        <li><a href="../#workflow" data-i18n="nav.workflow">工作流程</a></li>
+        <li><a href="../#techstack" data-i18n="nav.techstack">技术路线</a></li>
+        <li><a href="../blog/" data-i18n="nav.blog">博客</a></li>
+        <li><a href="./" class="active" data-i18n="nav.team">团队</a></li>
+        <li><a href="../media/" data-i18n="nav.media">媒体</a></li>
+        <li><a href="../#contact" data-i18n="nav.contact">联系</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+        <a href="../#contact" class="btn btn-primary btn-sm" data-i18n="nav.cta">联系我</a>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main">
+    <!-- ===== Page Header ===== -->
+    <div class="page-header">
+      <div class="container">
+        <h1 data-i18n="team.title">关于创始人</h1>
+        <p data-i18n="team.subtitle">二十年中国软件开发与创业经验，如今投身农业机器人</p>
+      </div>
+    </div>
+
+    <!-- ===== Founder Story ===== -->
+    <section class="page-body">
+      <div class="container">
+        <div class="founder-story">
+          <img src="../images/founder.jpg" alt="创始人照片" class="founder-photo" loading="lazy">
+          <div class="founder-content">
+          <p data-i18n="team.p1">2005 年，我是一个程序员，在中国写了 10 年代码。从 Java 到嵌入式，从 Web 前端到后端架构，经历了中国互联网从起步到爆发的全过程。</p>
+          <p data-i18n="team.p2">后来我选择了创业，成立了重庆盾博科技发展有限责任公司，专注于汽车 GPS 定位系统。那是"车联网"这个词还没有出现的年代，我们已经在做车辆实时追踪。</p>
+          <p data-i18n="team.p3">巅峰时期，我们的系统同时监控着超过 10,000 台卡车的实时位置、速度和状态。从硬件终端到通信协议，从数据平台到用户界面，全部自研。</p>
+          <p data-i18n="team.p4">疫情过后，我来到加拿大。最大的震撼是：机器人技术已经完全变了。</p>
+          <p data-i18n="team.p5">ROS2 让机器人开发变成了搭积木，YOLO 把视觉识别做到了实时可用，多模态 AI 模型更是把感知能力提升到了新高度。以前需要整个博士团队才能做的事情，现在几个工程师就能搞定。</p>
+          <p data-i18n="team.p6">加拿大的设施农业很发达，大量蘑菇种植农场就在安大略省周边。他们对自动化采摘有真实、迫切的需求。</p>
+          <p data-i18n="team.p7">目前项目的核心代码已经完成，视觉识别管道、ROS2 控制节点、后端服务都已跑通。正在等待机械臂到货后进行联调。</p>
+          <p class="highlight" data-i18n="team.p8">调试成功后，希望能找到农场提供真实环境进行测试验证，把一个可行的产品真正部署到生产环境中。</p>
+          <div class="founder-cta">
+            <a href="../#contact" class="btn btn-primary" data-i18n="team.cta">对这个项目感兴趣？欢迎联系我聊聊</a>
+          </div>
+          </div><!-- /founder-content -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="footer-brand-mark" aria-hidden="true">🍄</span> <span data-i18n="footer.brand">采蘑菇机械臂 Mushroom Harvesting Robot</span></div>
+        <div class="footer-copy" data-i18n="footer.copy">© 2025 采蘑菇机械臂项目 · 概念演示</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/translations.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

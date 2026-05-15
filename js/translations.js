@@ -76,6 +76,51 @@ const translations = {
     'footer.brand': '采蘑菇机械臂 Mushroom Harvesting Robot',
     'footer.copy': '© 2025 采蘑菇机械臂项目 · 概念演示',
     'contact.btn': '发送邮件',
+
+    /* ===== 导航新页面 ===== */
+    'nav.blog': '博客',
+    'nav.team': '团队',
+    'nav.media': '媒体中心',
+
+    /* ===== 团队页面 ===== */
+    'team.title': '关于创始人',
+    'team.subtitle': '二十年中国软件开发与创业经验，如今投身农业机器人',
+    'team.p1': '2005 年，我是一个程序员，在中国写了 10 年代码。从 Java 到嵌入式，从 Web 前端到后端架构，经历了中国互联网从起步到爆发的全过程。',
+    'team.p2': '后来我选择了创业，成立了重庆盾博科技发展有限责任公司，专注于汽车 GPS 定位系统。那是"车联网"这个词还没有出现的年代，我们已经在做车辆实时追踪。',
+    'team.p3': '巅峰时期，我们的系统同时监控着超过 10,000 台卡车的实时位置、速度和状态。从硬件终端到通信协议，从数据平台到用户界面，全部自研。',
+    'team.p4': '疫情过后，我来到加拿大。最大的震撼是：机器人技术已经完全变了。',
+    'team.p5': 'ROS2 让机器人开发变成了搭积木，YOLO 把视觉识别做到了实时可用，多模态 AI 模型更是把感知能力提升到了新高度。以前需要整个博士团队才能做的事情，现在几个工程师就能搞定。',
+    'team.p6': '加拿大的设施农业很发达，大量蘑菇种植农场就在安大略省周边。他们对自动化采摘有真实、迫切的需求。',
+    'team.p7': '目前项目的核心代码已经完成，视觉识别管道、ROS2 控制节点、后端服务都已跑通。正在等待机械臂到货后进行联调。',
+    'team.p8': '调试成功后，希望能找到农场提供真实环境进行测试验证，把一个可行的产品真正部署到生产环境中。',
+    'team.cta': '对这个项目感兴趣？欢迎联系我聊聊',
+
+    /* ===== 博客页面 ===== */
+    'blog.title': '博客',
+    'blog.subtitle': '技术分享与项目进展',
+    'blog.read_more': '阅读全文 →',
+    'blog.back': '← 返回博客列表',
+    'blog.post1.title': '为什么我要做采蘑菇机械臂',
+    'blog.post1.date': '2025 年 5 月 15 日',
+    'blog.post1.excerpt': '从 GPS 定位到农业机器人——一个中国程序员的转型故事。',
+
+    /* ===== 博客文章1 ===== */
+    'blog.post1.h1': '从代码到机械臂',
+    'blog.post1.p1': '2005 年，我还在写代码。那时候的 Java 还叫 J2EE，互联网泡沫刚过去没多久，中国的程序员还在手敲 SQL 拼接动态页面。',
+    'blog.post1.p2': '写了 10 年代码之后，我选择了创业。重庆盾博科技发展有限责任公司，做的是汽车 GPS 定位系统。用现在的话说，是"车联网"。',
+    'blog.post1.p3': '巅峰时期，我们的平台同时追踪着 10,000 多台卡车的实时位置、速度和状态。在那个智能手机还没有普及的年代，这算是一个不大不小的工程成就。',
+    'blog.post1.p4': '但做了几年之后，我开始觉得这个行业的创新空间在收窄。GPS 定位本身已经高度成熟，差异化越来越难做。',
+    'blog.post1.p5': '然后疫情来了。世界被按下了暂停键。也就是在那段时间，我决定把目光投向更远的地方。',
+    'blog.post1.p6': '来到加拿大之后，我最大的感受是：机器人技术已经完全变了样。',
+    'blog.post1.p7': '现在的开源生态太强了。ROS2 让机器人开发变成了搭积木，YOLO 把视觉识别做到了实时可用，Gemini Pro 这样的多模态 AI 模型更是把理解能力提升到了新高度。以前需要整个博士团队才能做的事情，现在几个工程师就能搞定。',
+    'blog.post1.p8': '为什么选蘑菇？因为这是一个被低估的市场。全球蘑菇种植业体量巨大，但采收环节高度依赖人工。蘑菇生长周期短、采摘窗口窄，劳动力短缺的问题比大田作物更严重。而且蘑菇是设施农业，环境可控，对机器人来说比户外要友好得多。',
+    'blog.post1.p9': '目前项目的核心代码已经完成，视觉识别管道、ROS2 控制节点、后端数据服务都已经跑通。最关键的"拼图"是机械臂本身——已经订购，等到货之后联调。',
+    'blog.post1.p10': '如果调试成功，下一步就是找一个真实的蘑菇农场做实地测试。如果你知道有这样的机会，欢迎联系我。',
+
+    /* ===== 媒体中心 ===== */
+    'media.title': '媒体中心',
+    'media.subtitle': '蘑菇种植与农业自动化影像',
+    'media.gallery_note': '以下图片来源于 Unsplash 与 Pexels，仅用于概念展示。',
   },
   en: {
     'nav.about': 'About',
@@ -151,6 +196,51 @@ const translations = {
     'footer.brand': 'Mushroom Harvesting Robot',
     'footer.copy': '© 2025 Mushroom Harvesting Robot · Concept Demo',
     'contact.btn': 'Send Email',
+
+    /* ===== Nav New Pages ===== */
+    'nav.blog': 'Blog',
+    'nav.team': 'Team',
+    'nav.media': 'Media',
+
+    /* ===== Team Page ===== */
+    'team.title': 'About the Founder',
+    'team.subtitle': 'Two decades of software engineering and entrepreneurship, now building agricultural robots',
+    'team.p1': 'In 2005 I was a programmer writing code in China — 10 years of it. From Java to embedded systems, from front-end to back-end architecture, I lived through the entire arc of China\'s internet boom.',
+    'team.p2': 'Then I founded Chongqing Dunbo Technology Development Co., Ltd., focusing on vehicle GPS tracking systems. This was before "IoV" (Internet of Vehicles) was even a term.',
+    'team.p3': 'At its peak, our platform tracked 10,000+ trucks in real time — position, speed, status. The hardware terminals, communication protocols, data platform, and UI were all built in-house.',
+    'team.p4': 'After the pandemic, I moved to Canada. What struck me most was how radically robotics had changed.',
+    'team.p5': 'ROS2 makes robot development feel like assembling building blocks. YOLO brings real-time visual recognition. Multimodal AI models push perception to an entirely new level. What used to require a full PhD team can now be done by a small engineering crew.',
+    'team.p6': 'Canada has a thriving controlled-environment agriculture sector, with many mushroom farms right here in Ontario. The demand for automated harvesting is real and urgent.',
+    'team.p7': 'The project\'s core code is already complete — vision pipeline, ROS2 control nodes, and backend services are all running. We\'re awaiting the robotic arm delivery for integration testing.',
+    'team.p8': 'Once integration is successful, the next step is to find a farm for real-world testing and deploy a viable product into production.',
+    'team.cta': 'Interested in this project? Feel free to reach out',
+
+    /* ===== Blog Page ===== */
+    'blog.title': 'Blog',
+    'blog.subtitle': 'Technical Insights & Project Updates',
+    'blog.read_more': 'Read More →',
+    'blog.back': '← Back to Blog',
+    'blog.post1.title': 'Why I\'m Building a Mushroom Harvesting Robot',
+    'blog.post1.date': 'May 15, 2025',
+    'blog.post1.excerpt': 'From GPS tracking to agricultural robotics — a Chinese programmer\'s story of reinvention.',
+
+    /* ===== Blog Post 1 ===== */
+    'blog.post1.h1': 'From Code to Robot Arms',
+    'blog.post1.p1': 'In 2005, I was writing code. Java was still called J2EE, the dot-com bubble had just passed, and Chinese programmers were stitching together dynamic pages with raw SQL.',
+    'blog.post1.p2': 'After a decade of coding, I started my own company — Chongqing Dunbo Technology Development Co., Ltd., building vehicle GPS tracking systems. Today they\'d call it "IoV."',
+    'blog.post1.p3': 'At its peak, our platform tracked over 10,000 trucks in real time — location, speed, and status. For an era before smartphones, that was a respectable engineering feat.',
+    'blog.post1.p4': 'After several years, I felt the room for innovation in GPS tracking narrowing. The technology had matured and differentiation was getting harder.',
+    'blog.post1.p5': 'Then COVID hit. The world pressed pause. And in that pause, I decided to look farther ahead.',
+    'blog.post1.p6': 'When I arrived in Canada, the biggest realization was: robotics had been completely rewritten.',
+    'blog.post1.p7': 'The open-source ecosystem is incredibly powerful. ROS2 turns robot development into a modular build process. YOLO makes real-time vision practical. Multimodal AI models like Gemini Pro push comprehension to levels we couldn\'t have imagined. What once needed an entire PhD team, a small engineering group can now handle.',
+    'blog.post1.p8': 'Why mushrooms? Because it\'s an underrated market. Global mushroom cultivation is massive, but harvesting is overwhelmingly manual. Mushrooms grow fast, harvest windows are tight, and labor shortages hit harder than in field crops. Plus, mushrooms are grown indoors — a controlled environment is far friendlier for robotics than open fields.',
+    'blog.post1.p9': 'The core code is already done: the vision pipeline, ROS2 control nodes, and backend data services are all working. The missing piece is the arm itself — already ordered, awaiting delivery for integration.',
+    'blog.post1.p10': 'If integration goes well, the next step is finding a real mushroom farm for field testing. If you know of an opportunity, I\'d love to hear from you.',
+
+    /* ===== Media Gallery ===== */
+    'media.title': 'Media Gallery',
+    'media.subtitle': 'Mushroom Farming & Agricultural Automation',
+    'media.gallery_note': 'Images sourced from Unsplash and Pexels for concept demonstration purposes only.',
   }
 };
 

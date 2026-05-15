@@ -2,35 +2,22 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ===== 1. Language Toggle =====
+  // ===== 1. Language Toggle (multi-page navigation) =====
   const langToggle = document.getElementById('langToggle');
-  let currentLang = 'zh'; // default: Chinese
 
-  // Load saved language preference
-  try {
-    const saved = localStorage.getItem('mushroom-robot-lang');
-    if (saved === 'en') {
-      currentLang = 'en';
-    }
-  } catch (e) { /* localStorage unavailable */ }
+  // Detect current language from <html data-lang="zh|en">
+  const currentLang = document.documentElement.getAttribute('data-lang') || 'zh';
 
+  // Set toggle button text
+  if (langToggle) {
+    langToggle.textContent = currentLang === 'zh' ? 'EN' : '中文';
+  }
+
+  // Apply translations from JS for data-i18n elements
   function applyLanguage(lang) {
     if (!window.translations || !window.translations[lang]) return;
-
     const t = window.translations[lang];
-    currentLang = lang;
 
-    // Save preference
-    try {
-      localStorage.setItem('mushroom-robot-lang', lang);
-    } catch (e) { /* ignore */ }
-
-    // Update toggle button text
-    if (langToggle) {
-      langToggle.textContent = lang === 'zh' ? 'EN' : '中文';
-    }
-
-    // Update all elements with data-i18n attributes
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       const value = t[key];
@@ -40,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
           el.setAttribute(i18nAttr, value);
           return;
         }
-        // Handle different element types
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
           el.placeholder = value;
         } else if (el.tagName === 'IMG') {
@@ -58,18 +44,25 @@ document.addEventListener('DOMContentLoaded', () => {
       if (value) document.title = value;
     }
 
-    // Update html lang attribute
     document.documentElement.lang = lang;
   }
 
-  // Apply initial language
+  // Apply initial translations
   applyLanguage(currentLang);
 
-  // Toggle on click
+  // Toggle: navigate between / (zh) and /en/ (en) versions
   if (langToggle) {
     langToggle.addEventListener('click', () => {
-      const newLang = currentLang === 'zh' ? 'en' : 'zh';
-      applyLanguage(newLang);
+      const path = window.location.pathname;
+      if (currentLang === 'en') {
+        // Switch to Chinese: strip /en/ prefix
+        const zhPath = path.replace(/^\/en(\/|$)/, '/');
+        window.location.href = zhPath || '/';
+      } else {
+        // Switch to English: add /en/ prefix (handle root)
+        const enPath = path === '/' ? '/en/' : '/en' + path;
+        window.location.href = enPath;
+      }
     });
   }
 
@@ -133,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ===== 5. Scroll Animation (Intersection Observer) =====
   const animatedElements = document.querySelectorAll(
-    '.about-card, .workflow-step, .tech-card, .timeline-item, .demo-placeholder, .join-card, .contact-card'
+    '.about-card, .workflow-step, .tech-card, .timeline-item, .demo-video, .join-card, .contact-card'
   );
 
   if ('IntersectionObserver' in window) {
