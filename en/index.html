@@ -93,7 +93,7 @@
             By combining vision detection, path planning, and robotic arm control, our goal is to achieve precise harvesting, improve agricultural automation, and reduce manual labor costs.
           </p>
           <p class="about-text about-text-highlight" data-i18n="about.p3">
-            The project is currently in the concept phase, with the robotic arm still under development but the core technical roadmap already defined.
+            The project has completed hand-eye calibration and entered the real-machine debugging phase. The vision pipeline, ROS2 control nodes, and backend services are all operational. Real-machine debugging has been far rougher than simulation — the integration between the robotic arm and the vision system has gone through countless rounds of trial and error. More than ten adapter plates for the end-effector have been shattered during testing, and the gripper itself was damaged under heavy stress. We are currently waiting for replacement parts. But honestly: every failure brings us closer to a truly robust solution. These are hard lessons, and they are worth paying for.
           </p>
         </div>
       </div>
@@ -194,39 +194,53 @@
                 <div class="tl-text" data-i18n="timeline.item1">Concept design completed</div>
               </div>
             </div>
-            <div class="timeline-item active">
+            <div class="timeline-item completed">
               <div class="tl-dot"></div>
               <div class="tl-content">
                 <time class="tl-date">2025 Q1</time>
                 <div class="tl-text" data-i18n="timeline.item2">Robotic arm arrives</div>
               </div>
             </div>
-            <div class="timeline-item">
-              <div class="tl-dot"></div>
-              <div class="tl-content">
-                <time class="tl-date">2025 Q2</time>
-                <div class="tl-text" data-i18n="timeline.item3">Hand–eye calibration</div>
-              </div>
-            </div>
-            <div class="timeline-item">
+            <div class="timeline-item completed">
               <div class="tl-dot"></div>
               <div class="tl-content">
                 <time class="tl-date">2025 Q3</time>
-                <div class="tl-text" data-i18n="timeline.item4">Vision model development</div>
+                <div class="tl-text" data-i18n="timeline.item3">Hand–eye calibration</div>
               </div>
             </div>
-            <div class="timeline-item">
+            <div class="timeline-item completed">
               <div class="tl-dot"></div>
               <div class="tl-content">
                 <time class="tl-date">2025 Q4</time>
-                <div class="tl-text" data-i18n="timeline.item5">Harvesting demo</div>
+                <div class="tl-text" data-i18n="timeline.item4">Vision model development</div>
+              </div>
+            </div>
+            <div class="timeline-item completed">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <time class="tl-date">2026 Q1</time>
+                <div class="tl-text" data-i18n="timeline.item5">Real-machine debugging started</div>
+              </div>
+            </div>
+            <div class="timeline-item active">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <time class="tl-date">2026 Q2</time>
+                <div class="tl-text" data-i18n="timeline.item6">Debugging paused (gripper & adapter plates replacement)</div>
               </div>
             </div>
             <div class="timeline-item">
               <div class="tl-dot"></div>
               <div class="tl-content">
-                <time class="tl-date">2026</time>
-                <div class="tl-text" data-i18n="timeline.item6">Prototype release</div>
+                <time class="tl-date">TBD</time>
+                <div class="tl-text" data-i18n="timeline.item7">Harvesting validation demo</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <time class="tl-date">TBD</time>
+                <div class="tl-text" data-i18n="timeline.item8">Prototype release</div>
               </div>
             </div>
           </div>
@@ -236,13 +250,13 @@
       <!-- ===== Demo Section ===== -->
       <section class="section section-demo" id="demo">
         <div class="container">
-          <h2 class="section-title" data-i18n="demo.title">Demo (Simulation)</h2>
+          <h2 class="section-title" data-i18n="demo.title">Demo</h2>
           <div class="demo-container">
             <div class="demo-videos">
-              <video class="demo-video" controls playsinline preload="metadata" aria-label="Mushroom harvesting robot demonstration video 1">
+              <video class="demo-video" controls playsinline preload="metadata" aria-label="Mushroom harvesting robot real-machine debugging video 1">
                 <source src="../images/demo-1.mp4" type="video/mp4">
               </video>
-              <video class="demo-video" controls playsinline preload="metadata" aria-label="Mushroom harvesting robot demonstration video 2">
+              <video class="demo-video" controls playsinline preload="metadata" aria-label="Mushroom harvesting robot real-machine debugging video 2">
                 <source src="../images/demo-2.mp4" type="video/mp4">
               </video>
             </div>
@@ -298,7 +312,7 @@
       <div class="footer-inner">
         <div class="footer-brand">🍄 Mushroom Harvesting Robot</div>
         <div class="footer-copy" data-i18n="footer.copy">
-          © 2025 Mushroom Harvesting Robot · Concept Demo
+          © 2026 Mushroom Harvesting Robot · Real-machine Debugging Phase
         </div>
       </div>
     </div>

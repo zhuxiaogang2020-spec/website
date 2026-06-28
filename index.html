@@ -123,7 +123,7 @@
           提升农业自动化水平，并减少人工劳动成本。
         </p>
         <p class="about-text about-text-highlight" data-i18n="about.p3">
-          目前项目处于概念阶段，机械臂尚未完成，但核心技术路线已明确。
+          目前项目已完成手眼标定并进入真机调试阶段。视觉管线、ROS2 控制节点与后端服务均已就绪。真机调试远没有仿真那么顺利——机械臂与视觉系统的联调经历了大量反复试错，末端夹具的转接盘已经打坏了十几个，夹爪也在高强度测试中损坏。目前正在等待更换件到货。但说实话，每一次失败都在帮我们逼近那个真正可靠的方案，这些代价花得不冤。
         </p>
       </div>
     </div>
@@ -224,39 +224,53 @@
             <div class="tl-text" data-i18n="timeline.item1">完成概念设计</div>
           </div>
         </div>
-        <div class="timeline-item active">
+        <div class="timeline-item completed">
           <div class="tl-dot"></div>
           <div class="tl-content">
             <time class="tl-date">2025 Q1</time>
             <div class="tl-text" data-i18n="timeline.item2">机械臂到货</div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <time class="tl-date">2025 Q2</time>
-            <div class="tl-text" data-i18n="timeline.item3">完成手眼标定</div>
-          </div>
-        </div>
-        <div class="timeline-item">
+        <div class="timeline-item completed">
           <div class="tl-dot"></div>
           <div class="tl-content">
             <time class="tl-date">2025 Q3</time>
-            <div class="tl-text" data-i18n="timeline.item4">完成识别模型</div>
+            <div class="tl-text" data-i18n="timeline.item3">完成手眼标定</div>
           </div>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item completed">
           <div class="tl-dot"></div>
           <div class="tl-content">
             <time class="tl-date">2025 Q4</time>
-            <div class="tl-text" data-i18n="timeline.item5">采摘 Demo</div>
+            <div class="tl-text" data-i18n="timeline.item4">完成识别模型</div>
+          </div>
+        </div>
+        <div class="timeline-item completed">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <time class="tl-date">2026 Q1</time>
+            <div class="tl-text" data-i18n="timeline.item5">启动真机调试</div>
+          </div>
+        </div>
+        <div class="timeline-item active">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <time class="tl-date">2026 Q2</time>
+            <div class="tl-text" data-i18n="timeline.item6">调试中（夹爪+转接盘更换中）</div>
           </div>
         </div>
         <div class="timeline-item">
           <div class="tl-dot"></div>
           <div class="tl-content">
-            <time class="tl-date">2026</time>
-            <div class="tl-text" data-i18n="timeline.item6">发布原型</div>
+            <time class="tl-date">待定</time>
+            <div class="tl-text" data-i18n="timeline.item7">采摘验证 Demo</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <time class="tl-date">待定</time>
+            <div class="tl-text" data-i18n="timeline.item8">发布原型</div>
           </div>
         </div>
       </div>
@@ -266,13 +280,13 @@
   <!-- ===== Demo Section ===== -->
   <section class="section section-demo" id="demo">
     <div class="container">
-      <h2 class="section-title" data-i18n="demo.title">演示（模拟）</h2>
+      <h2 class="section-title" data-i18n="demo.title">演示</h2>
       <div class="demo-container">
         <div class="demo-videos">
-          <video class="demo-video" controls playsinline preload="metadata" aria-label="采蘑菇机械臂工作演示视频 1">
+          <video class="demo-video" controls playsinline preload="metadata" aria-label="采蘑菇机械臂真机调试视频 1">
             <source src="images/demo-1.mp4" type="video/mp4">
           </video>
-          <video class="demo-video" controls playsinline preload="metadata" aria-label="采蘑菇机械臂工作演示视频 2">
+          <video class="demo-video" controls playsinline preload="metadata" aria-label="采蘑菇机械臂真机调试视频 2">
             <source src="images/demo-2.mp4" type="video/mp4">
           </video>
         </div>
@@ -331,7 +345,7 @@
       <div class="footer-inner">
         <div class="footer-brand"><span class="footer-brand-mark" aria-hidden="true">🍄</span> <span data-i18n="footer.brand">Mushroom Harvesting Robot</span></div>
         <div class="footer-copy" data-i18n="footer.copy">
-          © 2025 采蘑菇机械臂项目 · 概念演示
+          © 2026 采蘑菇机械臂项目 · 真机调试阶段
         </div>
       </div>
     </div>
