@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=20260814">
 </head>
 <body>
 
@@ -90,10 +90,10 @@
             The Mushroom Harvesting Robot is an ongoing R&D project focused on automated mushroom picking.
           </p>
           <p class="about-text" data-i18n="about.p2">
-            By combining vision detection, path planning, and robotic arm control, our goal is to achieve precise harvesting, improve agricultural automation, and reduce manual labor costs.
+            By combining vision detection, path planning, and robotic arm control, the system can now accurately locate and harvest mushrooms.
           </p>
           <p class="about-text about-text-highlight" data-i18n="about.p3">
-            The project has completed hand-eye calibration and entered the real-machine debugging phase. The vision pipeline, ROS2 control nodes, and backend services are all operational. Real-machine debugging has been far rougher than simulation — the integration between the robotic arm and the vision system has gone through countless rounds of trial and error. More than ten adapter plates for the end-effector have been shattered during testing, and the gripper itself was damaged under heavy stress. We are currently waiting for replacement parts. But honestly: every failure brings us closer to a truly robust solution. These are hard lessons, and they are worth paying for.
+            The next phase will use a linear rail to simulate the tight working space of real growing racks and further refine the end effector so it can reach in from beside the mushroom and grip the stem. Materials are currently being procured.
           </p>
         </div>
       </div>
@@ -222,25 +222,39 @@
                 <div class="tl-text" data-i18n="timeline.item5">Real-machine debugging started</div>
               </div>
             </div>
-            <div class="timeline-item active">
+            <div class="timeline-item completed">
               <div class="tl-dot"></div>
               <div class="tl-content">
                 <time class="tl-date">2026 Q2</time>
-                <div class="tl-text" data-i18n="timeline.item6">Debugging paused (gripper & adapter plates replacement)</div>
+                <div class="tl-text" data-i18n="timeline.item6">First round of real-machine debugging and hardware iteration completed</div>
+              </div>
+            </div>
+            <div class="timeline-item completed">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <time class="tl-date">2026 Q3</time>
+                <div class="tl-text" data-i18n="timeline.item7">Accurate mushroom localization and harvesting achieved</div>
+              </div>
+            </div>
+            <div class="timeline-item active">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <time class="tl-date">2026 Q3</time>
+                <div class="tl-text" data-i18n="timeline.item8">Procurement for the rail and end-effector upgrade</div>
               </div>
             </div>
             <div class="timeline-item">
               <div class="tl-dot"></div>
               <div class="tl-content">
-                <time class="tl-date">TBD</time>
-                <div class="tl-text" data-i18n="timeline.item7">Harvesting validation demo</div>
+                <time class="tl-date" data-i18n="timeline.tbd">TBD</time>
+                <div class="tl-text" data-i18n="timeline.item9">Rail-based tight-space simulation and stem-grip refinement</div>
               </div>
             </div>
             <div class="timeline-item">
               <div class="tl-dot"></div>
               <div class="tl-content">
-                <time class="tl-date">TBD</time>
-                <div class="tl-text" data-i18n="timeline.item8">Prototype release</div>
+                <time class="tl-date" data-i18n="timeline.tbd">TBD</time>
+                <div class="tl-text" data-i18n="timeline.item10">Real-environment testing and prototype release</div>
               </div>
             </div>
           </div>
@@ -252,6 +266,34 @@
         <div class="container">
           <h2 class="section-title" data-i18n="demo.title">Demo</h2>
           <div class="demo-container">
+            <div class="progress-update">
+              <span class="progress-badge" data-i18n="demo.update_badge">August 2026 Update</span>
+              <h3 data-i18n="demo.update_title">Accurate mushroom localization and harvesting achieved</h3>
+              <p data-i18n="demo.update_summary">The system can now accurately locate and harvest mushrooms. The next phase will use a linear rail to simulate the tight working space of real growing racks, while the end effector is refined to reach in from beside the mushroom and grip the stem. Materials are currently being procured.</p>
+            </div>
+            <div class="demo-media-grid">
+              <figure class="demo-media-card">
+                <img class="demo-photo" src="../images/progress-harvest-overview.jpg" alt="Robotic arm performing localization and harvesting tests over a mushroom growing tray" loading="lazy" data-i18n="demo.photo1_alt" data-i18n-attr="alt">
+                <figcaption data-i18n="demo.photo1_caption">Robotic arm and mushroom growing tray</figcaption>
+              </figure>
+              <figure class="demo-media-card">
+                <img class="demo-photo" src="../images/progress-harvest-closeup.jpg" alt="Robot end effector approaching mushrooms during harvesting tests" loading="lazy" data-i18n="demo.photo2_alt" data-i18n-attr="alt">
+                <figcaption data-i18n="demo.photo2_caption">Close-up of the end-effector harvesting test</figcaption>
+              </figure>
+              <figure class="demo-media-card demo-media-card-video">
+                <video class="demo-video demo-video-vertical" controls playsinline preload="metadata" poster="../images/progress-harvest-overview.jpg" aria-label="Accurate mushroom localization and harvesting test video one" data-i18n="demo.video1_alt" data-i18n-attr="aria-label">
+                  <source src="../images/progress-harvest-demo-1.mp4" type="video/mp4">
+                </video>
+                <figcaption data-i18n="demo.video1_caption">Localization and harvesting test record (1)</figcaption>
+              </figure>
+              <figure class="demo-media-card demo-media-card-video">
+                <video class="demo-video demo-video-vertical" controls playsinline preload="metadata" poster="../images/progress-harvest-closeup.jpg" aria-label="Accurate mushroom localization and harvesting test video two" data-i18n="demo.video2_alt" data-i18n-attr="aria-label">
+                  <source src="../images/progress-harvest-demo-2.mp4" type="video/mp4">
+                </video>
+                <figcaption data-i18n="demo.video2_caption">Localization and harvesting test record (2)</figcaption>
+              </figure>
+            </div>
+            <h3 class="demo-subtitle" data-i18n="demo.earlier_title">Earlier real-machine debugging</h3>
             <div class="demo-videos">
               <video class="demo-video" controls playsinline preload="metadata" aria-label="Mushroom harvesting robot real-machine debugging video 1">
                 <source src="../images/demo-1.mp4" type="video/mp4">
@@ -312,13 +354,13 @@
       <div class="footer-inner">
         <div class="footer-brand">🍄 Mushroom Harvesting Robot</div>
         <div class="footer-copy" data-i18n="footer.copy">
-          © 2026 Mushroom Harvesting Robot · Real-machine Debugging Phase
+          © 2026 Mushroom Harvesting Robot · Harvest Validation & Environment Simulation Phase
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="../js/translations.js?v=20260515"></script>
-  <script src="../js/main.js?v=20260515"></script>
+  <script src="../js/translations.js?v=20260814"></script>
+  <script src="../js/main.js?v=20260814"></script>
 </body>
 </html>

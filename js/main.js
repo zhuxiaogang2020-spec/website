@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ===== 5. Scroll Animation (Intersection Observer) =====
   const animatedElements = document.querySelectorAll(
-    '.about-card, .workflow-step, .tech-card, .timeline-item, .demo-video, .join-card, .contact-card'
+    '.about-card, .workflow-step, .tech-card, .timeline-item, .progress-update, .demo-media-card, .demo-video, .join-card, .contact-card'
   );
 
   if ('IntersectionObserver' in window) {
